@@ -1,4 +1,48 @@
 . {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+}
+
+.navigation-bar {
+    border-bottom: solid;
+}
+
+.brand-name {
+    font-family: "Gotham Black", sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.brand-name a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-width: medium;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 25px;
+    vertical-align: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+
