@@ -45,4 +45,82 @@ body {
     color: black;
 }
 
+.hero {
+    padding: 45px;
+    border-bottom: solid black;
+}
 
+.hero-contents {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.textTitle p {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+
+.hero-textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px;
+}
+
+.textDescription {
+    white-space: pre-line;
+    overflow-wrap: normal;
+    word-break: break-all;
+}
+
+.hero-button {
+    display: block;
+    border: solid;
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+}
+
+.hero-button:hover {
+    border: #fc1e1e solid;
+    background-color: red;
+    color: white;
+}
+
+.WWH-title {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.WWH-title p {
+    font-weight: bold;
+    font-size: 45px;
+    margin: 20px 0 15px 0;
+}
+
+.barPicturesContainer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: solid black;
+}
+
+.barPicturesContainer div {
+    margin: 0 10px 0 10px;
+}
+
+.barPicturesContainer p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.barPicturesContainer img {
+    border: solid black;
+}
