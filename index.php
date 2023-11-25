@@ -25,6 +25,24 @@
         </div>
     </nav>
 </section>
+
+<section class="thirdBar">
+    <div class="thirdBarContainer">
+        <div class="thirdBarTextHood">
+            <div class="thirdBarText">
+                <div class="thirdBarTextContentContainer">
+                    <h1>Struggling with seasonal affective disorder?</h1>
+                    <p>Seasonal affective disorder (SAD) is a type of depression <span>you can experience during certain times of year. If it's affecting you, read our info on the causes, treatment options, and self-care.</span>
+                    </p>
+                    <p><a href="/information-support/types-of-mental-health-problems/seasonal-affective-disorder-sad/"
+                          title="Get support with seasonal affective disorder (SAD)" class="thirdBar-TextButton"><span>Get support with SAD</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="thirdBar-banner"></div>
+    </div>
+</section>
 <section class="hero">
     <div class="hero-contents">
         <div class="hero-image"><img src="res/hero-pics/hero_image.png" alt="hero_image" height="500px" width="500px">
@@ -44,22 +62,84 @@
 </section>
 <section class="firstBar">
     <div class="WWH-title">
-        <p>Who We Help?</p>
+        <p>Mental Health Illness Around The World</p>
     </div>
     <div class="barPicturesContainer">
-        <div class="firstPicture">
-            <img src="res/firstBar-pics/1.jpg" alt="1" height="220px" width="220px">
-            <p>Nathan1</p>
+        <div class="firstRow">
+            <div class="firstPictureContainer">
+                <div class="firstPictureContents">
+                    <img src="res/firstBar-pics/1.jpg" alt="1" height="100px">
+                    <p style="font-weight: bold">Anxiety</p>
+                    <p style="font-size: 15px">is a feeling of fear, dread, and uneasiness. It can be normal reaction to
+                        stress</p>
+                </div>
+            </div>
+            <div class="firstPictureContainer">
+                <div class="firstPictureContents">
+                    <img src="res/firstBar-pics/1.jpg" alt="1" height="100px">
+                    <p style="font-weight: bold">Anxiety</p>
+                    <p style="font-size: 15px">is a feeling of fear, dread, and uneasiness. It can be normal reaction to
+                        stress</p>
+                </div>
+            </div>
+            <div class="firstPictureContainer">
+                <div class="firstPictureContents">
+                    <img src="res/firstBar-pics/1.jpg" alt="1" height="100px">
+                    <p style="font-weight: bold">Anxiety</p>
+                    <p style="font-size: 15px">is a feeling of fear, dread, and uneasiness. It can be normal reaction to
+                        stress</p>
+                </div>
+            </div>
         </div>
-        <div class="secondPicture">
-            <img src="res/firstBar-pics/1.jpg" alt="1" height="220px" width="220px">
-            <p>Nathan2</p>
-        </div>
-        <div class="thirdPicture">
-            <img src="res/firstBar-pics/1.jpg" alt="1" height="220px" width="220px">
-            <p>Nathan3</p>
+        <div class="secondRow">
+            <div class="firstPictureContainer">
+                <div class="firstPictureContents">
+                    <img src="res/firstBar-pics/1.jpg" alt="1" height="100px">
+                    <p style="font-weight: bold">Anxiety</p>
+                    <p style="font-size: 15px">is a feeling of fear, dread, and uneasiness. It can be normal reaction to
+                        stress</p>
+                </div>
+            </div>
+            <div class="firstPictureContainer">
+                <div class="firstPictureContents">
+                    <img src="res/firstBar-pics/1.jpg" alt="1" height="100px">
+                    <p style="font-weight: bold">Anxiety</p>
+                    <p style="font-size: 15px">is a feeling of fear, dread, and uneasiness. It can be normal reaction to
+                        stress</p>
+                </div>
+            </div>
+            <div class="firstPictureContainer">
+                <div class="firstPictureContents">
+                    <img src="res/firstBar-pics/1.jpg" alt="1" height="100px">
+                    <p style="font-weight: bold">Anxiety</p>
+                    <p style="font-size: 15px">is a feeling of fear, dread, and uneasiness. It can be normal reaction to
+                        stress</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+<div class="mentalTest">
+    <div class="testsContainer">
+        <div class="anxietyTestContainer">
+            <div class="anxietyText">
+                <div class="anxietyTextContainer">
+                    <h4>Anxiety Test</h4>
+                    <p>Know how stressed you are</p>
+                    <a href="#" title="anxietyTest"><span>Start Now</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="depressionTestContainer">
+            <div class="depressionText">
+                <div class="depressionTextContainer">
+                    <h4>Depression Test</h4>
+                    <p>Know how depressed you are</p>
+                    <a href="#" title="depressionTest"><span>Start Now</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
