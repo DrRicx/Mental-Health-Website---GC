@@ -403,10 +403,10 @@ body {
     padding: 50px;
 }
 
-.help-wrapper {
+.persons-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
@@ -414,7 +414,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100rem;
+    width: fit-content;
     gap: 15px;
 }
 
@@ -429,9 +429,10 @@ body {
 
 .young-wrapper {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    width: 100rem;
+    width: fit-content;
     gap: 15px;
 }
 
