@@ -1,7 +1,52 @@
 . {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
+
+
+.custom-shape-divider-bottom-1700975517 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+}
+
+.custom-shape-divider-bottom-1700975517 svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 140px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1700975517 .shape-fill {
+    fill: #0620a6;
+}
+
+.custom-shape-divider-top-1700975794 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1700975794 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1700975794 .shape-fill {
+    fill: #0620a6;
+}
+
 
 body {
     font-family: Poppins, sans-serif;
@@ -53,7 +98,10 @@ body {
 
 .hero {
     padding: 45px 60px;
-    border-bottom: solid black;
+    background: #0620a6;
+}
+.hero-wave-wrapper {
+    position: relative;
 }
 
 .hero-contents {
@@ -113,45 +161,28 @@ body {
     margin: 0;
 }
 
-.barPicturesContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-}
-
-.firstRow {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.secondRow {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.barPicturesContainer img {
-    border: solid black;
-    margin-bottom: 10px;
-    width: inherit;
-}
-
 .firstBar {
-    border-bottom: solid black;
-    margin-bottom: 10px;
-    padding: 25px;
+    padding: 50px;
 }
 
-.firstPictureContents {
+.grid-container {
+    display: grid;
+    background-color: #2196F3;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
     display: flex;
-    width: 20rem;
-    align-items: center;
     flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+    width: auto;
 }
 
-.firstPictureContents p {
+.grid-item p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -227,6 +258,12 @@ body {
     font-size: 1.3125rem;
     box-sizing: border-box;
     max-width: 31.25rem;
+}
+
+.thirdBarTextContentContainer a{
+    margin-top: 15px;
+}.thirdBarTextContentContainer span{
+    margin-bottom: 15px;
 }
 
 .thirdBar-banner {
@@ -317,5 +354,33 @@ body {
 
 .depressionTextContainer a {
     color: black;
+}
+
+.addictionTestContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    background-image: url('res/mental_tests-pic/addiction.jpg');
+    background-position: top;
+}
+
+.addictionTextContainer h4, p {
+    margin: 0;
+}
+
+.addictionTextContainer h4 {
+    font-size: 25px;
+}
+
+.addictionTextContainer a {
+    color: black;
+}
+
+.addictionTextContainer {
+    background: rgba(255, 255, 255, 0.34);
+    padding: 15px;
 }
 
