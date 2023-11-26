@@ -403,7 +403,7 @@ body {
     padding: 50px;
 }
 
-.persons-wrapper {
+.help-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
