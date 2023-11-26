@@ -100,6 +100,7 @@ body {
     padding: 45px 60px;
     background: #0620a6;
 }
+
 .hero-wave-wrapper {
     position: relative;
 }
@@ -165,10 +166,16 @@ body {
     padding: 50px;
 }
 
+.grid-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .grid-container {
     display: grid;
     background-color: #2196F3;
     grid-template-columns: repeat(3, 1fr);
+    width: 85%;
     justify-items: center;
     row-gap: 10px;
     padding: 10px;
@@ -191,6 +198,12 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+.grid-picture {
+    height: 150px;
+    width: inherit;
+    background-size: cover;
 }
 
 .thirdBar {
@@ -260,9 +273,11 @@ body {
     max-width: 31.25rem;
 }
 
-.thirdBarTextContentContainer a{
+.thirdBarTextContentContainer a {
     margin-top: 15px;
-}.thirdBarTextContentContainer span{
+}
+
+.thirdBarTextContentContainer span {
     margin-bottom: 15px;
 }
 
@@ -384,3 +399,47 @@ body {
     padding: 15px;
 }
 
+.who-we-help {
+    padding: 50px;
+}
+
+.persons-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.students-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100rem;
+    gap: 15px;
+}
+
+.students-text-wrapper {
+    width: 30rem;
+    margin-left: 20px;
+}
+
+.students-text-wrapper p {
+    font-size: 20px;
+}
+
+.young-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100rem;
+    gap: 15px;
+}
+
+.young-text-wrapper {
+    width: 30rem;
+    margin-left: 20px;
+}
+
+.young-text-wrapper p {
+    font-size: 20px;
+}
