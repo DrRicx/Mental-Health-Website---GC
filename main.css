@@ -89,6 +89,7 @@ body {
     display: inline;
     margin: 0 25px;
     vertical-align: center;
+    font-size: 20px;
 }
 
 .nav-links li a {
@@ -173,7 +174,6 @@ body {
 
 .grid-container {
     display: grid;
-    background-color: #2196F3;
     grid-template-columns: repeat(3, 1fr);
     width: 85%;
     justify-items: center;
@@ -187,6 +187,12 @@ body {
     gap: 5px;
     margin: 10px;
     width: auto;
+}
+
+.grid-item h1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 15px 0 10px 0;
 }
 
 .grid-item p {
@@ -204,6 +210,7 @@ body {
     height: 150px;
     width: inherit;
     background-size: cover;
+    background-position: 50% 50%;
 }
 
 .thirdBar {
@@ -443,4 +450,75 @@ body {
 
 .young-text-wrapper p {
     font-size: 20px;
+}
+
+.testimonial {
+    background: #6a80f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px 0 50px;
+}
+
+.testimonial-title h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+.testimonial-title {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.testimonial-title p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.testimonial-wrapper {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.testimonial-wrapper div {
+    margin: 15px;
+    text-align: center;
+}
+
+.testimonial-wrapper img {
+    height: 180px;
+    width: 190px;
+    margin-top: 10px;
+    border-radius: 100%;
+}
+
+.testimonial-picture {
+    height: 180px;
+    width: 190px;
+    margin-top: 10px;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.name {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.dialouge {
+    font-size: 20px;
+}
+
+.first-testimonial, .second-testimonial, .third-testimonial {
+    padding: 10px;
+    width: 25rem;
+    border-radius: 8px;
+    background: #081981;
+    color: #f5eded;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
