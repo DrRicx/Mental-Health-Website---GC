@@ -1,4 +1,6 @@
-. {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500;600;700&family=Poppins:wght@100;200;400&family=Satisfy&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -53,11 +55,6 @@ body {
     margin: 0;
 }
 
-.navigation-bar {
-    border-bottom: solid;
-
-}
-
 .brand-name {
     font-family: "Gotham Black", sans-serif;
     font-size: 30px;
@@ -95,11 +92,26 @@ body {
 .nav-links li a {
     text-decoration: none;
     color: black;
+    padding: 20px;
+}
+
+.nav-links li a:hover {
+    background: #c7bbbb;
+    transition: background-color 1s;
 }
 
 .hero {
     padding: 45px 60px;
     background: #0620a6;
+}
+
+.hero-image {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    height: 25rem;
+    width: 30rem;
+    background-image: url('res/hero-pics/hero-image.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .hero-wave-wrapper {
@@ -108,7 +120,7 @@ body {
 
 .hero-contents {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 
@@ -122,6 +134,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: white;
     margin: 25px;
     width: 50vh;
 }
@@ -139,7 +152,7 @@ body {
     border: solid;
     padding: 10px;
     border-radius: 8px;
-    color: black;
+    color: white;
     width: fit-content;
     height: fit-content;
     text-decoration: none;
@@ -316,19 +329,49 @@ body {
     border-radius: 6px;
 }
 
+.first_mental_divider {
+    padding: 50px;
+    text-align: center;
+    background: #4964ee;
+}
+
+.divider-quote h1 {
+    font-family: "Gotham";
+    color: white;
+}
+
+.mentalTest {
+    margin-top: 25px;
+}
+
 .testsContainer {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.anxietyTestContainer {
+.self-tests {
+    width: 23rem;
+}
+
+.self-tests p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.anxietyTestContainer, .depressionTestContainer, .addictionTestContainer {
     display: flex;
     flex-direction: column-reverse;
     background-size: cover;
     background-repeat: no-repeat;
     width: 300px;
-    height: 300px;
+    height: inherit;
+}
+
+.anxietyTestContainer {
     background-image: url('res/mental_tests-pic/anxiety.jpeg');
     background-position: top;
 }
@@ -351,12 +394,6 @@ body {
 }
 
 .depressionTestContainer {
-    display: flex;
-    flex-direction: column-reverse;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
     background-image: url('res/mental_tests-pic/depression.jpeg');
     background-position: top;
 }
@@ -379,12 +416,6 @@ body {
 }
 
 .addictionTestContainer {
-    display: flex;
-    flex-direction: column-reverse;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
     background-image: url('res/mental_tests-pic/addiction.jpg');
     background-position: top;
 }
@@ -460,7 +491,7 @@ body {
     padding: 0 50px 0 50px;
 }
 
-.testimonial-title h1{
+.testimonial-title h1 {
     font-size: 50px;
     margin: 0;
 }
@@ -470,7 +501,7 @@ body {
     margin-top: 25px;
 }
 
-.testimonial-title p{
+.testimonial-title p {
     margin-top: 10px;
     font-size: 20px;
 }
@@ -511,6 +542,7 @@ body {
 }
 
 .dialouge {
+    font-weight: lighter;
     font-size: 20px;
 }
 
