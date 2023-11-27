@@ -279,12 +279,12 @@ body {
     margin: 15px 0 10px 0;
 }
 
-.anxiety-button {
+.anxiety-button, .depression-button {
     text-decoration: none;
     color: black;
 }
 
-.anxiety-button:hover{
+.anxiety-button:hover, .depression-button:hover{
     color: blue;
     text-decoration: underline;
 }
