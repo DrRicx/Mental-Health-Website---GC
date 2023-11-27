@@ -279,6 +279,16 @@ body {
     margin: 15px 0 10px 0;
 }
 
+.anxiety-button {
+    text-decoration: none;
+    color: black;
+}
+
+.anxiety-button:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
 .grid-item p {
     display: block;
     margin-block-start: 1em;
