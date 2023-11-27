@@ -5,6 +5,58 @@
     padding: 0;
 }
 
+.before-testimonial-wrapper {
+    position: relative;
+    margin: 0;
+}
+
+.top-testimonial {
+    position: relative;
+    z-index: -1;
+    margin: 0;
+}
+
+.custom-shape-divider-bottom-1701081637 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1701081637 svg {
+    position: relative;
+    display: block;
+    width: calc(136% + 1.3px);
+    height: 126px;
+}
+
+.custom-shape-divider-bottom-1701081637 .shape-fill {
+    fill: #0021DD;
+}
+
+.custom-shape-divider-top-1701081464 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1701081464 svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-top-1701081464 .shape-fill {
+    fill: #0021DD;
+}
+
 .testimonial-below-wrapper, .blob-wrapper {
     margin: 0;
 }
@@ -417,22 +469,28 @@ body {
 }
 
 .divider-quote h1 {
-    font-family: "Gotham";
+    font-family: "Gotham", serif;
     color: white;
 }
 
 .mentalTest {
     margin-top: 25px;
+    margin-bottom: 0 ;
 }
 
 .testsContainer {
     display: flex;
     justify-content: center;
     gap: 10px;
+    height: 25rem;
 }
 
 .self-tests {
     width: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
 }
 
 .self-tests p {
@@ -481,6 +539,7 @@ body {
 
 .depressionTextContainer {
     background: rgba(255, 255, 255, 0.34);
+    height: inherit;
     padding: 15px;
 }
 
@@ -575,6 +634,7 @@ body {
 }
 
 .testimonial {
+    margin: 0;
     z-index: 2;
     display: flex;
     flex-direction: column;
