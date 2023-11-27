@@ -55,6 +55,13 @@ body {
     margin: 0;
 }
 
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #788fff;
+}
+
 .brand-name {
     font-family: "Gotham Black", sans-serif;
     font-size: 30px;
@@ -73,6 +80,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 15px 40px;
     border-width: medium;
 }
@@ -97,7 +105,7 @@ body {
 
 .nav-links li a:hover {
     background: #c7bbbb;
-    transition: background-color 1s;
+    transition: background-color 0.5s;
 }
 
 .hero {
