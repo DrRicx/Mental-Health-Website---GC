@@ -5,6 +5,69 @@
     padding: 0;
 }
 
+.testimonial-below-wrapper, .blob-wrapper {
+    margin: 0;
+}
+
+.testimonial-below-wrapper {
+    position: relative;
+}
+
+.custom-shape-divider-bottom-1701054042 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1701054042 svg {
+    position: relative;
+    display: block;
+    width: calc(154% + 1.3px);
+    height: 248px;
+}
+
+.custom-shape-divider-bottom-1701054042 .shape-fill {
+    fill: #1035D6;
+}
+
+.custom-shape-divider-bottom-1701053850 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 134px;
+}
+
+.custom-shape-divider-bottom-1701053850 .shape-fill {
+    fill: #1035D6;
+}
+
+.blob-wrapper {
+    position: relative;
+}
+
+.custom-shape-divider-top-1701053732 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1701053732 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 132px;
+}
+
+.custom-shape-divider-top-1701053732 .shape-fill {
+    fill: #1035D6;
+}
 
 .custom-shape-divider-bottom-1700975517 {
     position: absolute;
@@ -449,6 +512,16 @@ body {
     padding: 50px;
 }
 
+
+.WWW {
+    letter-spacing: 5px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+
 .persons-wrapper {
     display: flex;
     flex-direction: column;
@@ -492,7 +565,7 @@ body {
 }
 
 .testimonial {
-    background: #6a80f5;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -515,6 +588,7 @@ body {
 }
 
 .testimonial-wrapper {
+    z-index: 10;
     width: 100%;
     display: flex;
     margin-top: 15px;
@@ -561,4 +635,53 @@ body {
     background: #081981;
     color: #f5eded;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.blob {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url('res/blob/happy-people.jpg');
+    z-index: -1;
+    height: 35rem;
+    width: 100%;
+}
+
+.blob-container {
+    height: inherit;
+    width: inherit;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.blob-banner {
+    display: flex;
+    align-items: center;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url('res/blob/blob-haikei.png');
+    justify-content: center;
+    opacity: 50%;
+    height: 30rem;
+    z-index: 10;
+    width: fit-content;
+}
+
+.blob-banner p {
+    width: fit-content;
+    font-size: 50px;
+    font-family: Poppins, serif;
+    font-weight: bold;
+    opacity: 100%;
+    color: white;
+}
+
+.footer-container {
+    padding: 15px;
+    background: #0620a6;
+    font-family: Poppins, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
