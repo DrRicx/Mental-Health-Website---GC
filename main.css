@@ -279,12 +279,12 @@ body {
     margin: 15px 0 10px 0;
 }
 
-.anxiety-button, .depression-button {
+.anxiety-button, .depression-button, .schizophrenia-button, .insonmia-button {
     text-decoration: none;
     color: black;
 }
 
-.anxiety-button:hover, .depression-button:hover{
+.anxiety-button:hover, .depression-button:hover, .schizophrenia-button:hover, .insonmia-button:hover{
     color: blue;
     text-decoration: underline;
 }
