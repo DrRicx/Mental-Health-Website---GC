@@ -61,7 +61,7 @@ div.radio-group input:checked + label {
 }
 
 div.radio-group input:hover + label {
-    background-color: #5e9d61;
+    background-color: #ff0000;
     opacity: 50%;
 
 }
