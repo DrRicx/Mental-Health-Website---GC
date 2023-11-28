@@ -66,7 +66,7 @@
 }
 
 .hero-banner {
-    background-image: url('res/mental_tests-pic/insomia.jpeg');
+    background-image: url('res/mental_tests-pic/ocd.jpeg');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@
 
 }
 
-.title-insonmia {
+.title-ocd {
     font-size: 60px;
     font-weight: bolder;
     letter-spacing: 5px;
@@ -96,7 +96,7 @@
     margin-top: 8px;
 }
 
-.symptoms-insonmia {
+.symptoms-ocd {
     margin-top: 30px;
 }
 
@@ -104,71 +104,86 @@
     font-size: 20px;
 }
 
-.types-insonmia {
+.types-ocd {
     margin-top: 30px;
 }
 
-.symptoms-insonmia p {
-    font-size: 40px;
-    font-weight: bold;
-}
 
-.impact-insonmia {
-    font-size: 40px;
-    font-weight: bold
-}
-
-.symptoms-insonmia ul {
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.symptoms-insonmia ul li {
-    margin-top: 10px;
+.symptoms-description {
     font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
 }
 
-.types-insonmia ul {
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.types-insonmia ul span {
+.title-symptoms {
+    font-size: 40px;
     font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title-symptoms-1 {
+    margin: 10px 0 10px 0;
     font-size: 30px;
+    font-weight: bold;
 }
 
-.types-insonmia ul li {
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-.prevention-title-insonmia {
+.impact-ocd {
     font-size: 40px;
     font-weight: bold
 }
 
-.prevention-description-insonmia {
+.symptoms-ocd ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.symptoms-ocd ul li {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.types-ocd ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.types-ocd ul span {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.types-ocd ul li {
     font-size: 20px;
     margin-top: 10px;
 }
 
-.prevention-insonmia ul {
+.prevention-title-ocd {
+    font-size: 40px;
+    font-weight: bold
+}
+
+.prevention-description-ocd {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.prevention-ocd ul {
     margin-left: 20px;
     margin-top: 15px;
 }
 
-.prevention-insonmia ul span {
+.prevention-ocd ul span {
     font-weight: bold;
     font-size: 30px;
 }
 
-.prevention-insonmia ul li {
+.prevention-ocd ul li {
     font-size: 20px;
     margin-top: 10px;
 }
 
-.prevention-insonmia {
+.prevention-ocd {
     margin-top: 30px;
 }
 

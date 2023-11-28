@@ -336,7 +336,12 @@ body {
     color: black;
 }
 
-.anxiety-button:hover, .depression-button:hover, .schizophrenia-button:hover, .insonmia-button:hover, .eating-disorder-button:hover{
+.ocd-button {
+    text-decoration: none;
+    color: black;
+}
+
+.anxiety-button:hover, .depression-button:hover, .schizophrenia-button:hover, .insonmia-button:hover, .eating-disorder-button:hover, .ocd-button {
     color: blue;
     text-decoration: underline;
 }
@@ -475,7 +480,7 @@ body {
 
 .mentalTest {
     margin-top: 25px;
-    margin-bottom: 0 ;
+    margin-bottom: 0;
 }
 
 .testsContainer {
