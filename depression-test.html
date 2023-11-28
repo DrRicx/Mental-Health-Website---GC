@@ -9,7 +9,7 @@
 <body>
 <div class="container">
     <h1>Depression Test</h1>
-    <form action="depression-process.php" method="post">
+    <form id="depressionForm">
         <label for="question1" class="label-title">1. Little interest or pleasure in doing things?</label>
         <div class="radio-group">
             <input type="radio" name="question1" value="0" id="q1-option1" required>
@@ -156,5 +156,44 @@
         </div>
     </form>
 </div>
+<script>
+    function calculateDepression() {
+        // Simulate processing and calculation
+        const questions = ["question1", "question2", "question3", "question4", "question5", "question6", "question7", "question8", "question9"];
+        let totalScore = 0;
+
+        questions.forEach(question => {
+            const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+            if (selectedOption) {
+                totalScore += parseInt(selectedOption.value, 10);
+            }
+        });
+
+        let depressionLevel = "";
+
+        if (totalScore <= 4) {
+            depressionLevel = "None";
+        } else if (totalScore <= 9) {
+            depressionLevel = "Mild Depression";
+        } else if (totalScore <= 14) {
+            depressionLevel = "Moderate Depression";
+        } else if (totalScore <= 19) {
+            depressionLevel = "Moderately Depression";
+        } else {
+            depressionLevel = "Severe Depression";
+        }
+
+        // Create a result element
+        const resultElement = document.createElement("div");
+        resultElement.innerHTML = `
+                <h1>Depression Test Result</h1>
+                <h2>Depression Level:</h2>
+                <p>${depressionLevel}</p>
+            `;
+
+        // Append the result to the container
+        document.querySelector(".container").appendChild(resultElement);
+    }
+</script>
 </body>
 </html>
