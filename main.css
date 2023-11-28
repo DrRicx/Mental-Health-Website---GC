@@ -341,7 +341,7 @@ body {
     color: black;
 }
 
-.anxiety-button:hover, .depression-button:hover, .schizophrenia-button:hover, .insonmia-button:hover, .eating-disorder-button:hover, .ocd-button {
+.anxiety-button:hover, .depression-button:hover, .schizophrenia-button:hover, .insonmia-button:hover, .eating-disorder-button:hover, .ocd-button:hover {
     color: blue;
     text-decoration: underline;
 }
