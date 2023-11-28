@@ -27,11 +27,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else if ($totalScore <= 19){
         $depressionLevel = "Moderately Depression";
     } else {
-        $depressionLevel = "severe";
+        $depressionLevel = "Severe Depression";
     }
 
-    // Display the depression level (you can customize this part based on your needs)
-    echo "<!DOCTYPE html>
+    // Create a unique filename based on timestamp
+    $resultFileName = "result_" . time() . ".html";
+
+    // Save the result in an HTML file
+    $resultFile = fopen($resultFileName, "w");
+
+    fwrite($resultFile, "<!DOCTYPE html>
 <html lang='en'>
 <head>
     <meta charset='UTF-8'>
@@ -46,9 +51,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p>$depressionLevel</p>
     </div>
 </body>
-</html>";
+</html>");
 
-    // You may also want to store the results in a database or log file
+    fclose($resultFile);
+
+    // Redirect to the saved result page
+    header("Location: $resultFileName");
+    exit();
 } else {
     // If the form is not submitted, redirect to the form page
     header("Location: index.html");
