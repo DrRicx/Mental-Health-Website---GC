@@ -60,6 +60,12 @@ div.radio-group input:checked + label {
     color: #fff;
 }
 
+div.radio-group input:hover + label {
+    background-color: #5e9d61;
+    opacity: 50%;
+
+}
+
 button {
     margin-top: 15px;
     padding: 10px;
