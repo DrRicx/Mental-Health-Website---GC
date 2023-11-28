@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' type='text/css' media='screen' href='anxiety-design.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='depression-design.css'>
     <title>Depression Test Result</title>
 </head>
 <body>
