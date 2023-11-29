@@ -1,53 +1,103 @@
 body {
-  font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
+}
+
+.title-wrapper .title-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+span {
+    font-size: 20px;
+}
+
+.question-q {
+    color: #0620a6;
+    font-size: 40px;
 }
 
 .accordion {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    margin: 20px auto;
 }
 
 .accordion-item {
-  border-bottom: 1px solid #ccc;
+    margin-top: 10px;
 }
 
 .accordion-item:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .accordion-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  cursor: pointer;
-  background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background: #f5eded;
+    border-left: solid #0620a6;
+}
+
+.accordion-heading div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-text-content div {
+    display: flex;
+    align-items: center;
+}
+
+.question-q {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    margin-right: 10px;
+    color: #0620a6;
+    font-size: 40px;
+}
+
+.answer-a {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    margin-right: 10px;
+    color: #8a8181;
+    font-size: 40px;
 }
 
 .accordion-icon {
-  font-size: 18px;
-  margin-left: 10px;
+    font-size: 18px;
+    margin-left: 10px;
 }
 
 .accordion-item.active .accordion-icon {
-  transform: rotate(45deg);
-  transition: transform 0.3s ease; /* Adjust the duration and timing function as needed */
+    transform: rotate(45deg);
+    transition: transform 0.3s ease; /* Adjust the duration and timing function as needed */
 }
 
 .accordion-item .accordion-icon {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease; /* Adjust the duration and timing function as needed */
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+/ * Adjust the duration and timing function as needed * /
 }
 
 .accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  padding: 10px;
-  transition: max-height 0.3s ease; /* Adjust the duration and timing function as needed */
+    max-height: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Adjust the duration and timing function as needed */
+}
+
+.accordion-text-content {
+    padding: 15px;
 }
 
 .accordion-item.active .accordion-content {
-  max-height: 200px; /* Adjust the value based on your content */
+    max-height: 200px; /* Adjust the value based on your content */
 }
