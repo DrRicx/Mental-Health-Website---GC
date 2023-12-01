@@ -1,0 +1,62 @@
+* {
+    font-family: Poppins, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #788fff;
+}
+
+.brand-name {
+    font-family: "Gotham Black", sans-serif;
+    font-size: 30px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+.brand-name a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 40px;
+    border-width: medium;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 25px;
+    vertical-align: center;
+    font-size: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.nav-links li a:hover {
+    background: #c7bbbb;
+    transition: background-color 0.5s;
+}
+
+.mental-health-container {
+    padding: 50px;
+}
