@@ -364,108 +364,6 @@ body {
     background-position: 50% 50%;
 }
 
-.thirdBar {
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-    line-height: 1.42857;
-    color: #555;
-    font-family: MindMeridian-Regular, sans-serif;
-    font-size: 1.3125rem;
-    box-sizing: border-box;
-    display: block;
-    overflow: hidden;
-    position: relative;
-}
-
-.thirdBarContainer {
-    font-size: 1.3125rem;
-    box-sizing: border-box;
-    display: flex;
-    max-width: 73rem;
-}
-
-.thirdBarTextHood {
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-    line-height: 1.42857;
-    color: #555;
-    font-family: MindMeridian-Regular, sans-serif;
-    font-size: 1.3125rem;
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-    max-width: 35.625rem;
-}
-
-.thirdBarText {
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-    line-height: 1.42857;
-    color: #555;
-    font-family: MindMeridian-Regular, sans-serif;
-    font-size: 1.3125rem;
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
-    z-index: 10;
-    min-width: 345px;
-    background: #fff;
-    background-color: rgba(255, 255, 255, .9);
-    -webkit-box-align: center;
-    align-items: center;
-    min-height: 360px;
-    padding: 2.875rem 4rem;
-    margin-right: .9375rem;
-    display: flex;
-    margin-left: 20px;
-}
-
-.thirdBarTextContentContainer {
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-    line-height: 1.42857;
-    color: #555;
-    font-family: MindMeridian-Regular, sans-serif;
-    font-size: 1.3125rem;
-    box-sizing: border-box;
-    max-width: 31.25rem;
-}
-
-.thirdBarTextContentContainer a {
-    margin-top: 15px;
-}
-
-.thirdBarTextContentContainer span {
-    margin-bottom: 15px;
-}
-
-.thirdBar-banner {
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-    line-height: 1.42857;
-    color: #555;
-    font-family: MindMeridian-Regular, sans-serif;
-    font-size: 1.3125rem;
-    box-sizing: border-box;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 240px;
-    left: auto;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    background-image: url('res/thirdBar-pics/cover-photo.png');
-    background-position: 50.0% 50.0%;
-}
-
-.thirdBar-TextButton {
-    text-decoration: none;
-    color: black;
-    border: 3px blue solid;
-    padding: 8px;
-    border-radius: 6px;
-}
 
 .first_mental_divider {
     padding: 50px;
@@ -497,6 +395,60 @@ body {
     justify-content: center;
     gap: 5px;
 }
+
+
+/* Third Bar Section Styles */
+.thirdBar {
+    position: relative;
+    height: 20rem;
+    background-image: url('res/thirdBar-pics/cover-photo.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* Third Bar Content */
+.thirdBar-content {
+    text-align: center;
+    height: 100%;
+    background-color: rgba(178, 178, 178, 0.83);
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.thirdBar-content div{
+    padding: 20px;
+}
+
+.thirdBar-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.thirdBar-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #e74c3c; /* Adjust the color as needed */
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c0392b; /* Adjust the hover color as needed */
+}
+
 
 .self-tests p {
     display: block;
