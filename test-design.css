@@ -66,11 +66,52 @@ img {
     justify-content: center;
 }
 
-.mental-health-container {
+.test-hero {
+    background-image: url('res/test-banner.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 400px;
+}
+
+.button {
+    margin-top: 15px;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.button-36 {
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    color: white;
+    text-align: left;
+    padding: 15px;
+    height: 60px;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+.button-36 p {
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.button-36:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+    .button-36 {
+        padding: 0 2.6rem;
+    }
+}
+
+.test-container {
     margin: 0px 50px 50px 50px;
 }
 
-.mental-health-wrapper {
+.test-wrapper {
     max-width: 70rem;
     padding: 40px;
 }
@@ -81,7 +122,7 @@ img {
     margin-bottom: 20px;
 }
 
-.mental-health-title-description {
+.test-title-description {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -93,16 +134,16 @@ img {
     margin-bottom: 10px;
 }
 
-.mental-health-description {
+.test-description {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.mental-health-description ul{
+.test-description ul {
     margin-left: 25px;
 }
 
-.mental-health-description ul li{
+.test-description ul li {
     margin-top: 7px;
 }
 

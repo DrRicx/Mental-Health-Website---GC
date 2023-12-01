@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="depression-design.css" media="screen" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <title>Anxiety Test</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Anxiety Test (GAD - 7)</h1>
+    <form id="depressionForm">
+        <label for="question1">1. Feeling nervous, anxious, or on edge?</label>
+        <div class="radio-group">
+            <input id="q1-option1" name="question1" required type="radio" value="0">
+            <label for="q1-option1">Not at all</label>
+
+            <input id="q1-option2" name="question1" type="radio" value="1">
+            <label for="q1-option2">Several Days</label>
+
+            <input id="q1-option3" name="question1" type="radio" value="2">
+            <label for="q1-option3">More than half the days</label>
+
+            <input id="q1-option4" name="question1" type="radio" value="3">
+            <label for="q1-option4">Always</label>
+        </div>
+
+        <label for="question2">2. Not being able to stop or control worrying?</label>
+        <div class="radio-group">
+            <input id="q2-option1" name="question2" required type="radio" value="0">
+            <label for="q2-option1">Not at all</label>
+
+            <input id="q2-option2" name="question2" type="radio" value="1">
+            <label for="q2-option2">Several Days</label>
+
+            <input id="q2-option3" name="question2" type="radio" value="2">
+            <label for="q2-option3">More than half the days</label>
+
+            <input id="q2-option4" name="question2" type="radio" value="3">
+            <label for="q2-option4">Always</label>
+        </div>
+
+        <label for="question3">3. Worrying too much about different things?</label>
+        <div class="radio-group">
+            <input id="q3-option1" name="question3" required type="radio" value="0">
+            <label for="q3-option1">Not at all</label>
+
+            <input id="q3-option2" name="question3" type="radio" value="1">
+            <label for="q3-option2">Several Days</label>
+
+            <input id="q3-option3" name="question3" type="radio" value="2">
+            <label for="q3-option3">More than half the days</label>
+
+            <input id="q3-option4" name="question3" type="radio" value="3">
+            <label for="q3-option4">Always</label>
+        </div>
+
+
+        <label for="question4">4. Trouble relaxing?</label>
+        <div class="radio-group">
+            <input id="q4-option1" name="question4" required type="radio" value="0">
+            <label for="q4-option1">Not at all</label>
+
+            <input id="q4-option2" name="question4" type="radio" value="1">
+            <label for="q4-option2">Several Days</label>
+
+            <input id="q4-option3" name="question4" type="radio" value="2">
+            <label for="q4-option3">More than half the days</label>
+
+            <input id="q4-option4" name="question4" type="radio" value="3">
+            <label for="q4-option4">Always</label>
+        </div>
+
+        <label for="question5">5. Being so restless that it's hard to sit still?</label>
+        <div class="radio-group">
+            <input id="q5-option1" name="question5" required type="radio" value="0">
+            <label for="q5-option1">Not at all</label>
+
+            <input id="q5-option2" name="question5" type="radio" value="1">
+            <label for="q5-option2">Several Days</label>
+
+            <input id="q5-option3" name="question5" type="radio" value="2">
+            <label for="q5-option3">More than half the days</label>
+
+            <input id="q5-option4" name="question5" type="radio" value="3">
+            <label for="q5-option4">Always</label>
+        </div>
+
+        <label for="question6">6. Feeling afraid as if something awful might happen?</label>
+        <div class="radio-group">
+            <input id="q6-option1" name="question6" required type="radio" value="0">
+            <label for="q6-option1">Not at all</label>
+
+            <input id="q6-option2" name="question6" type="radio" value="1">
+            <label for="q6-option2">Several Days</label>
+
+            <input id="q6-option3" name="question6" type="radio" value="2">
+            <label for="q6-option3">More than half the days</label>
+
+            <input id="q6-option4" name="question6" type="radio" value="3">
+            <label for="q6-option4">Always</label>
+        </div>
+
+        <!-- Add more questions as needed -->
+
+        <button onclick="calculateDepression()" type="button">Submit</button>
+    </form>
+
+    <!-- Result container -->
+    <div id="resultContainer"></div>
+</div>
+
+<script>
+    function calculateDepression() {
+        const questions = ["question1", "question2", "question3", "question4", "question5", "question6", "question7"];  // Add more questions here
+
+        let totalScore = 0;
+
+        questions.forEach(question => {
+            const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+            if (selectedOption) {
+                totalScore += parseInt(selectedOption.value, 10);
+            }
+        });
+
+        let depressionLevel = "";
+
+        if (totalScore >= 0 && totalScore <= 4) {
+            depressionLevel = "None";
+        } else if (totalScore >= 5 && totalScore <= 9) {
+            depressionLevel = "Mild Anxiety";
+        } else if (totalScore >= 10 && totalScore <= 14) {
+            depressionLevel = "Moderate Anxiety";
+        } else {
+            depressionLevel = "Severe Anxiety";
+        }
+
+        // Display the result using SweetAlert
+        Swal.fire({
+            title: 'Anxiety Test Result',
+            html: `<p>Anxiety Level: <strong>${depressionLevel}</strong></p>`,
+            icon: 'info'
+        });
+    }
+</script>
+</body>
+</html>
