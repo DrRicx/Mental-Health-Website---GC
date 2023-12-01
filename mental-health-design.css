@@ -57,6 +57,61 @@
     transition: background-color 0.5s;
 }
 
+img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.mental-health {
+    display: flex;
+    justify-content: center;
+}
+
 .mental-health-container {
-    padding: 50px;
+    margin: 0px 50px 50px 50px;
+}
+
+.mental-health-wrapper {
+    max-width: 70rem;
+    padding: 40px;
+}
+
+.health-title {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mental-health-title-description {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.health-secondary-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mental-health-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.mental-health-description ul{
+    margin-left: 25px;
+}
+
+.mental-health-description ul li{
+    margin-top: 7px;
+}
+
+.footer-container {
+    padding: 15px;
+    background: #0620a6;
+    font-family: Poppins, serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
