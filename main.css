@@ -423,6 +423,7 @@ body {
 .thirdBar-content {
     text-align: center;
     height: 100%;
+    width: 35rem;
     background-color: rgba(178, 178, 178, 0.83);
     margin-left: 40px;
     display: flex;
@@ -441,22 +442,6 @@ body {
 .thirdBar-content p {
     font-size: 1.5em;
     margin-bottom: 20px;
-}
-
-/* Call to Action Button */
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    text-decoration: none;
-    background-color: #e74c3c; /* Adjust the color as needed */
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #c0392b; /* Adjust the hover color as needed */
 }
 
 
