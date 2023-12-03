@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500;600;700&family=Poppins:wght@100;200;400&family=Satisfy&display=swap');
+
+
 * {
-    font-family: Poppins, Helvetica, sans-serif;
+    font-family: Poppins, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -8,12 +11,18 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #788fff;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+.navbar {
+    height: 50px;
 }
 
 .brand-name {
     font-family: "Gotham Black", sans-serif;
     font-size: 30px;
+    font-weight: bold;
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -22,7 +31,7 @@
 
 .brand-name a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .navbar {
@@ -48,12 +57,13 @@
 
 .nav-links li a {
     text-decoration: none;
-    color: black;
-    padding: 20px;
+    padding: 15px;
+    color: white;
 }
 
 .nav-links li a:hover {
-    background: #c7bbbb;
+    border-radius: 9%;
+    background-color: #0a0a7e;
     transition: background-color 0.5s;
 }
 

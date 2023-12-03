@@ -8,12 +8,18 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #788fff;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+.navbar {
+    height: 50px;
 }
 
 .brand-name {
     font-family: "Gotham Black", sans-serif;
     font-size: 30px;
+    font-weight: bold;
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -22,7 +28,7 @@
 
 .brand-name a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .navbar {
@@ -48,15 +54,15 @@
 
 .nav-links li a {
     text-decoration: none;
-    color: black;
-    padding: 20px;
+    padding: 15px;
+    color: white;
 }
 
 .nav-links li a:hover {
-    background: #c7bbbb;
+    border-radius: 9%;
+    background-color: #0a0a7e;
     transition: background-color 0.5s;
 }
-
 img {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }

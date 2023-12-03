@@ -8,12 +8,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #0f258c;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+.navbar {
+    height: 50px;
 }
 
 .brand-name {
     font-family: "Gotham Black", sans-serif;
     font-size: 30px;
+    font-weight: bold;
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -46,15 +52,16 @@ body {
     font-size: 20px;
 }
 
-.nav-links li a{
+.nav-links li a {
     text-decoration: none;
-    color: #ffffff;
-    padding: 20px;
+    padding: 15px;
+    color: white;
 }
 
 .nav-links li a:hover {
-    color: #2b4ce7;
-    transition: color 0.2s ease-in-out;
+    border-radius: 9%;
+    background-color: #0a0a7e;
+    transition: background-color 0.5s;
 }
 
 .title-wrapper .title-text {

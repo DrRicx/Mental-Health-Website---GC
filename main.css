@@ -170,11 +170,18 @@ body {
     margin: 0;
 }
 
+/*Navigation Bar Start*/
+
 .navigation-bar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #788fff;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+.navbar {
+    height: 50px;
 }
 
 .brand-name {
@@ -188,7 +195,7 @@ body {
 
 .brand-name a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .navbar {
@@ -214,14 +221,17 @@ body {
 
 .nav-links li a {
     text-decoration: none;
-    color: black;
-    padding: 20px;
+    padding: 15px;
+    color: white;
 }
 
 .nav-links li a:hover {
-    background: #c7bbbb;
+    border-radius: 9%;
+    background-color: #0a0a7e;
     transition: background-color 0.5s;
 }
+
+/*navigation bar ends*/
 
 .hero {
     padding: 45px 60px;
@@ -403,7 +413,7 @@ body {
     height: 20rem;
     background-image: url('res/thirdBar-pics/cover-photo.png'); /* Replace with your background image */
     background-size: cover;
-    background-position: center;
+    background-position: 50% 30%;
     color: #fff;
     display: flex;
     align-items: center;
@@ -419,7 +429,7 @@ body {
     align-items: center;
 }
 
-.thirdBar-content div{
+.thirdBar-content div {
     padding: 20px;
 }
 
