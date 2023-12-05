@@ -84,7 +84,7 @@
 .introduction-container {
     background: rgba(15, 37, 140, 0.91);
     width: 60%;
-    height: 50%;
+    height: fit-content;
     padding: 50px;
     color: #ffffff;
     border-radius: 6px;
@@ -93,7 +93,6 @@
 #introduction-title {
     font-size: 30px;
 }
-
 
 .introduction-text-wrapper {
     line-height: 35px;
