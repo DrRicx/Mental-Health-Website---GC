@@ -96,6 +96,7 @@
 
 .introduction-text-wrapper {
     line-height: 35px;
+    height : fit-content ;
 }
 
 .introduction-text {
